@@ -8,16 +8,16 @@
     您的名字与姓氏是什么?  
      [Unknown]:  king  
     您的组织单位名称是什么?  
-     [Unknown]:  adesk.com  
+     [Unknown]:  kingxxx.com  
     您的组织名称是什么?  
-     [Unknown]:  adesk.com  
+     [Unknown]:  kingxxx.com  
     您所在的城市或区域名称是什么?  
      [Unknown]:  Beijing  
     您所在的省/市/自治区名称是什么?  
      [Unknown]:  Beijing  
     该单位的双字母国家/地区代码是什么?  
      [Unknown]:  86  
-    CN=king, OU=adesk.com, O=adesk.com, L=Beijing, ST=Beijing, C=86是否正确?  
+    CN=king, OU=kingxxx.com, O=kingxxx.com, L=Beijing, ST=Beijing, C=86是否正确?  
      [否]:  y  
 
 2. 查看生成keystore
