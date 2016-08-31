@@ -14,3 +14,6 @@
 * 在top命令下，输入F然后选择相应的排序方式
 
 在top命令下，输入h查看帮忙信息，有更多的命令提示
+
+#### htpasswd 增加用户 密码
+* sudo htpasswd -b your_htpasswd_file username password
