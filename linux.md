@@ -17,3 +17,6 @@
 
 #### htpasswd 增加用户 密码
 * sudo htpasswd -b your_htpasswd_file username password
+
+#### 查看文件夹占用磁盘大小，并且排序展示
+* du -h -a | sort -h
