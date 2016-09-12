@@ -36,4 +36,11 @@
       **zip -d xxxx.apk META-INF/***  
     JDK 1.7下如果签名完成后不能安装，请增加-digestalg SHA1 -sigalg MD5withRSA参数  
     jarsigner -verbose **-digestalg SHA1 -sigalg MD5withRSA** -keystore myaaa.keystore -signedjar singggg.apk(签名输出apk) xxxxxx.apk(被签名apk) myalias  
+    
+4. 查看keystore md5 sha1等信息
+    
+
+
+    keytool -list -v -keystore xxx.keystore 
+
   
