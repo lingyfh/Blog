@@ -10,3 +10,6 @@ ex : testproject/testproject-Prefix.pch
     * sudo gem install cocoapods -v 0.39.0
     * 如果之前已经安装过高版本的，卸载重新安装0.39.0
     * sudo gem uninstall cocoapods
+
+#### 检查是否使用IDFA
+* grep -r advertisingIdentifier . 
