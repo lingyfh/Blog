@@ -23,3 +23,34 @@
 
 #### 日志清理
 * echo '' > file
+* 
+
+#### 新创建用户sudo无法使用
+xxx is not in the sudoers file.This incident will be reported.
+* 切换到root用户下
+* 添加sudo文件的写权限
+``` bash
+chmod u+w /etc/sudoers
+```
+
+* 编辑sudoers文件
+``` bash
+vi /etc/sudoers
+找到这行 root ALL=(ALL) ALL,在他下面添加xxx ALL=(ALL) ALL (这里的xxx是你的用户名)
+
+ps:这里说下你可以sudoers添加下面四行中任意一条
+youuser            ALL=(ALL)                ALL
+%youuser           ALL=(ALL)                ALL
+youuser            ALL=(ALL)                NOPASSWD: ALL
+%youuser           ALL=(ALL)                NOPASSWD: ALL
+
+第一行:允许用户youuser执行sudo命令(需要输入密码).
+第二行:允许用户组youuser里面的用户执行sudo命令(需要输入密码).
+第三行:允许用户youuser执行sudo命令,并且在执行的时候不输入密码.
+第四行:允许用户组youuser里面的用户执行sudo命令,并且在执行的时候不输入密码.
+```
+* 撤销sudoers文件写权限,命令:
+``` bash
+chmod u-w /etc/sudoers
+```
+
