@@ -54,3 +54,31 @@ youuser            ALL=(ALL)                NOPASSWD: ALL
 chmod u-w /etc/sudoers
 ```
 
+#### Linux 限制一个应用的速率
+
+* 安装trickle
+
+限制网络流量速率的一种方法是通过一个名为trickle的命令行工具。通过在程序运行时，预先加载一个速率限制 socket 库 的方法，trickle 命令允许你改变任意一个特定程序的流量。 trickle 命令有一个很好的特性是它仅在用户空间中运行，这意味着，你不必需要 root 权限就可以限制一个程序的带宽使用。要能使用 trickle 程序控制程序的带宽，这个程序就必须使用非静态链接库的套接字接口。当你想对一个不具有内置带宽控制功能的程序进行速率限制时，trickle 可以帮得上忙。
+``` bash 
+# Ubuntu，Debian 及其衍生发行版中安装 trickle 
+sudo apt-get install trickle
+# 在 Fdora 或 CentOS/RHEL 
+sudo yum install trickle
+```
+
+* trickle 的基本使用方法如下。仅需简单地把 trickle 命令（及速率参数）放在你想运行的命令之前
+``` bash
+trickle -d <download-rate> -u <upload-rate>  <command> 
+
+这就可以将 <command> 的下载和上传速率限定为特定值（单位 KBytes/s）。
+例如，将你的 scp 会话的最大上传带宽设定为 100 KB/s：
+trickle -u 100 scp backup.tgz alice@remote_host.com:
+
+最后， trickle 也可以以守护进程模式运行，在该模式下，它将会限制所有通过 trickle 启动且正在运行的程序的总带宽之和。 启动 trickle 使其作为一个守护进程（例如， trickled）：
+
+sudo trickled -d 1000
+
+一旦 trickled 守护进程在后台运行，你便可以通过 trickle 命令来启动其他程序。假如你通过 trickle 启动一个程序，那么这个程序的最大下载速率将是 1000 KB/s， 假如你再通过 trickle 启动了另一个程序，则每个程序的(下载)速率极限将会被限制为 500 KB/s，等等。
+```
+
+
