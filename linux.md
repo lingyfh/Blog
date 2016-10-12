@@ -81,4 +81,6 @@ sudo trickled -d 1000
 一旦 trickled 守护进程在后台运行，你便可以通过 trickle 命令来启动其他程序。假如你通过 trickle 启动一个程序，那么这个程序的最大下载速率将是 1000 KB/s， 假如你再通过 trickle 启动了另一个程序，则每个程序的(下载)速率极限将会被限制为 500 KB/s，等等。
 ```
 
-
+#### 查看端口情况 端口占用情况 
+* sudo lsof -i （sudo lsof -i:80）
+* netstat -apn|grep 80
