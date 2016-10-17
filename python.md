@@ -14,3 +14,6 @@
 * virtualenv your_dir(目录地址)
 * cd your_dir/bin
 * source activate
+
+#### 使用douban的源安装python pkg
+* pip install redis -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
