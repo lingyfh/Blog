@@ -84,3 +84,6 @@ sudo trickled -d 1000
 #### 查看端口情况 端口占用情况 
 * sudo lsof -i （sudo lsof -i:80）
 * netstat -apn|grep 80
+
+#### tar 压缩文件
+* tar -zcvf xxxxx(输出文件名).tar.gz 被压缩文件
