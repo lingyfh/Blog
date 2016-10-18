@@ -87,3 +87,8 @@ sudo trickled -d 1000
 
 #### tar 压缩文件
 * tar -zcvf xxxxx(输出文件名).tar.gz 被压缩文件
+
+#### 打印服务器上所有运行的进程
+``` bash 
+ sudo netstat -nltp | grep 0.0.0.0 | awk '{print $7}' | awk -F'/'  '{print $1}' | xargs -i sudo ls -l /proc/{}/cwd | awk '{print $11 " " $3}' | sort | awk '{print $2 " " $1}'
+```
