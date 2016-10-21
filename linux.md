@@ -92,3 +92,10 @@ sudo trickled -d 1000
 ``` bash 
  sudo netstat -nltp | grep 0.0.0.0 | awk '{print $7}' | awk -F'/'  '{print $1}' | xargs -i sudo ls -l /proc/{}/cwd | awk '{print $11 " " $3}' | sort | awk '{print $2 " " $1}'
 ```
+
+#### 监控当前服务器带宽情况
+* sudo nethogs 
+安装
+``` bash
+sudo apt-get install nethogs
+```
