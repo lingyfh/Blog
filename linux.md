@@ -99,3 +99,7 @@ sudo trickled -d 1000
 ``` bash
 sudo apt-get install nethogs
 ```
+
+#### 指定IP解析域名
+* dig baidu.com @211.141.241.138
+
