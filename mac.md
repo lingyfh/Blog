@@ -6,3 +6,8 @@
 
 #### 修改Hostname
 1. sudo scutil --set HostName name-you-want
+
+#### mac 清除dns缓存
+``` bash
+sudo killall -HUP mDNSResponder
+```
