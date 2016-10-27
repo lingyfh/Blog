@@ -13,3 +13,13 @@ ex : testproject/testproject-Prefix.pch
 
 #### 检查是否使用IDFA
 * grep -r advertisingIdentifier . 
+
+#### 打开系统WiFi设置页
+``` bash
+NSURL *url = [NSURL URLWithString:@"prefs:root=WIFI"];
+if ([[UIApplication sharedApplication] canOpenURL:url]) {
+    [[UIApplication sharedApplication] openURL:url];
+} else {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+}
+```
