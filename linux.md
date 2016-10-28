@@ -115,3 +115,14 @@ load average: 0.1, 0.1, 0.1
 如果只有1分钟的系统负荷大于1.0，其他两个时间段都小于1.0，这表明只是暂时现象，问题不大。
 如果15分钟内，平均系统负荷大于1.0（调整CPU核心数之后），表明问题持续存在，不是暂时现象。所以，你应该主要观察"15分钟系统负荷"，将它作为电脑正常运行的指标。
 ```
+
+#### tar 命令 [每天一个linux命令（28）：tar命令](http://www.cnblogs.com/peida/archive/2012/11/30/2795656.html)
+``` bash
+.gz
+解压1：gunzip FileName.gz
+解压2：gzip -d FileName.gz
+压缩：gzip FileName
+.tar.gz 和 .tgz
+解压：tar zxvf FileName.tar.gz
+压缩：tar zcvf FileName.tar.gz DirName
+```
