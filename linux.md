@@ -126,3 +126,6 @@ load average: 0.1, 0.1, 0.1
 解压：tar zxvf FileName.tar.gz
 压缩：tar zcvf FileName.tar.gz DirName
 ```
+
+#### start-stop-daemon
+* 用来启动和关闭系统级别的进程
