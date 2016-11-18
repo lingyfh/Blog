@@ -43,4 +43,4 @@ sudo launchctl stop homebrew.mxcl.dnsmasq
 sudo launchctl start homebrew.mxcl.dnsmasq
 ```
 
-
+* 在mac的网络设置中增加127.0.0.1
