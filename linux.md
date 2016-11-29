@@ -129,3 +129,26 @@ load average: 0.1, 0.1, 0.1
 
 #### start-stop-daemon
 * 用来启动和关闭系统级别的进程
+
+#### attach [How to know where a program is stuck in linux?](http://unix.stackexchange.com/questions/166541/how-to-know-where-a-program-is-stuck-in-linux)
+``` bash
+My first step would be to run strace on the process, best
+
+ strace -s 99 -ffp 12345
+if your process ID is 12345. This will show you all syscalls the program is doing. How to strace a process tells you more.
+
+If you insist on getting a stacktrace, google tells me the equivalent is pstack. But as I do not have it installed I use gdb:
+
+ tweedleburg:~ # sleep 3600 &
+ [2] 2621
+ tweedleburg:~ # gdb
+ (gdb) attach 2621
+ (gdb) bt
+ #0  0x00007feda374e6b0 in __nanosleep_nocancel () from /lib64/libc.so.6
+ #1  0x0000000000403ee7 in ?? ()
+ #2  0x0000000000403d70 in ?? ()
+ #3  0x000000000040185d in ?? ()
+ #4  0x00007feda36b8b05 in __libc_start_main () from /lib64/libc.so.6
+ #5  0x0000000000401969 in ?? ()
+ (gdb)
+```
