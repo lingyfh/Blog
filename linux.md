@@ -154,6 +154,11 @@ If you insist on getting a stacktrace, google tells me the equivalent is pstack.
 ```
 
 #### Web性能测试
+* 安装
+``` bash
+sudo apt-get install apache2-utils
+```
+
 * ab [options] [http://]hostname[:port]/path
 ``` bash
  ab -n xxx(请求数) -c xxx(并发数) xxx(url 地址)
