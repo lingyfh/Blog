@@ -22,7 +22,8 @@ brew install dnsmasq
 cp /usr/local/opt/dnsmasq/dnsmasq.conf.example /usr/local/etc/dnsmasq.conf
 ```
 
-将以下配置写入dnsmasq.conf中
+将以下配置写入/usr/local/etc/dnsmasq.conf中
+
 ``` bash
 resolv-file=/etc/resolv.conf
 strict-order
@@ -31,6 +32,11 @@ cache-size=32768
 # 固定将域名指定ip
 address=/test.lignyfh.com/192.168.0.39
 ```
+在/etc/hosts文件写入192.168.0.39 test.lignyfh.com
+
+* 测试ping test.lignyfh.com
+* curl "test.lignyfh.com"
+
 * 将dnsmasq设置为开机启动
 ``` bash
 sudo cp -fv /usr/local/opt/dnsmasq/*.plist /Library/LaunchDaemons
@@ -43,4 +49,4 @@ sudo launchctl stop homebrew.mxcl.dnsmasq
 sudo launchctl start homebrew.mxcl.dnsmasq
 ```
 
-* 在mac的网络设置中增加127.0.0.1
+* 在mac的网络设置中DNS增加127.0.0.1
