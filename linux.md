@@ -152,3 +152,9 @@ If you insist on getting a stacktrace, google tells me the equivalent is pstack.
  #5  0x0000000000401969 in ?? ()
  (gdb)
 ```
+
+#### Web性能测试
+* ab [options] [http://]hostname[:port]/path
+``` bash
+ ab -n xxx(请求数) -c xxx(并发数) xxx(url 地址)
+```
