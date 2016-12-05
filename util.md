@@ -1,3 +1,7 @@
+
+#### install htpasswd
+* sudo apt-get install apache2-utils
+
 #### htpasswd常用命令
 ``` bash 
 -c：创建一个加密文件； 
