@@ -16,6 +16,7 @@
 
 * htpasswd -b xxxx(加密文件，ex:.htpasswd) username password 创建新用户
 * htpasswd -D xxxx(加密文件) username 删除用户
+* htpasswd -bc xxxx username password (创建加密文件，并增加用户)
 
 #### chrome clear dns cache
 * chrome://net-internals/#dns
