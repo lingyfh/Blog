@@ -50,3 +50,12 @@ sudo launchctl start homebrew.mxcl.dnsmasq
 ```
 
 * 在mac的网络设置中DNS增加127.0.0.1
+
+* gem install xxx operation not permitted[aw from stackover flow](http://stackoverflow.com/a/32892222/1528524)
+``` bash
+sudo gem install -n /usr/local/bin xxxxx
+
+Apparently with OSX el Capitan, there is a new security function that prevents you from modifying system files called Rootless. So you'll have 2 options:
+
+If you install gems on /usr/local/bin there will be no problem because rootless doesn't affect this path.
+```
