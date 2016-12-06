@@ -9,3 +9,11 @@ git merge dev --squash
 git status 可以看到合并的代码
 git commit
 ```
+
+### git 配置颜色
+``` bash
+git config --global color.status auto
+git config --global color.diff auto
+git config --global color.branch auto
+git config --global color.interactive auto
+```
