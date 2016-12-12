@@ -163,3 +163,10 @@ sudo apt-get install apache2-utils
 ``` bash
  ab -n xxx(请求数) -c xxx(并发数) xxx(url 地址)
 ```
+
+#### crontab 
+* 查看日志
+``` bash
+tail -f /var/log/syslog | grep cron -i
+```
+* 命令需要username才能正常执行
