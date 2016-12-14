@@ -14,7 +14,14 @@ rs.reconfig(cfg)
 rs.reconfig(cf, {"force": true})
 ```
 
-#### mongo db 运行
+#### mongodb db 运行
 ``` bash
 numactl --interleave=all mongod --config xxxxxxxx(configpath) --fork
+```
+
+#### mongodb 增加仲裁节点
+``` bash
+mongod --port 30000 --dbpath /data/arbiter --replSet rs
+
+rs.addArb("host:30000")
 ```
