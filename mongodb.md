@@ -13,3 +13,8 @@ rs.reconfig(cfg)
 # 强制修改（当没有master存在时执行）
 rs.reconfig(cf, {"force": true})
 ```
+
+#### mongo db 运行
+``` bash
+numactl --interleave=all mongod --config xxxxxxxx(configpath) --fork
+```
