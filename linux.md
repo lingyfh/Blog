@@ -170,3 +170,13 @@ sudo apt-get install apache2-utils
 tail -f /var/log/syslog | grep cron -i
 ```
 * 命令需要username才能正常执行
+
+#### dmesg 
+``` bash
+# 开机信息亦保存在/var/log/dmesg
+# 通常会安装驱动程序（内核模块），会打印一些信息，就可以通过dmesg命令来查看
+
+tail -f /var/log/dmesg
+
+sudo dmesg
+```
