@@ -180,3 +180,18 @@ tail -f /var/log/dmesg
 
 sudo dmesg
 ```
+
+#### 切换debian apt-get镜像为阿里云
+``` bash
+# 备份/etc/apt/sources.list
+# 修改/etc/apt/sources.list
+
+deb http://mirrors.aliyun.com/debian wheezy main contrib non-free
+deb-src http://mirrors.aliyun.com/debian wheezy main contrib non-free
+
+deb http://mirrors.aliyun.com/debian wheezy-updates main contrib non-free
+deb-src http://mirrors.aliyun.com/debian wheezy-updates main contrib non-free
+
+deb http://mirrors.aliyun.com/debian-security wheezy/updates main contrib non-free
+deb-src http://mirrors.aliyun.com/debian-security wheezy/updates main contrib non-free
+```
