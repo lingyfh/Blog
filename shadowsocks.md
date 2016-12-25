@@ -1,3 +1,10 @@
+#### install 
+``` bash
+apt-get install python-pip
+pip install shadowsocks
+
+pip install shadowsocks
+```
 
 #### 启动shadowsocks服务
 ``` bash
