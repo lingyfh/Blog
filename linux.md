@@ -195,3 +195,8 @@ deb-src http://mirrors.aliyun.com/debian wheezy-updates main contrib non-free
 deb http://mirrors.aliyun.com/debian-security wheezy/updates main contrib non-free
 deb-src http://mirrors.aliyun.com/debian-security wheezy/updates main contrib non-free
 ```
+
+#### wget 下载https文件
+``` bash
+wget --no-check-certificate https:
+```
