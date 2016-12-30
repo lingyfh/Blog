@@ -200,3 +200,9 @@ deb-src http://mirrors.aliyun.com/debian-security wheezy/updates main contrib no
 ``` bash
 wget --no-check-certificate https:
 ```
+
+#### scp 限制速度 
+``` bash
+# 速度限制为100KB/s
+scp -P prot -l 100 user@host:/home/user/file ./
+```
