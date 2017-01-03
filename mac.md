@@ -59,3 +59,9 @@ Apparently with OSX el Capitan, there is a new security function that prevents y
 
 If you install gems on /usr/local/bin there will be no problem because rootless doesn't affect this path.
 ```
+
+* [fatal error: 'openssl/bio.h' file not found](http://stackoverflow.com/a/34731151/1528524)
+``` bash
+brew install openssl 
+brew link openssl --force
+```
