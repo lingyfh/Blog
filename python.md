@@ -20,3 +20,11 @@
 
 #### PIL 库 IOError: decoder jpeg not available [While upgrading python imaging library (PIL), it tells me “JPEG support not available”](http://stackoverflow.com/a/20753643/1528524)
 * 安装 pip install Pillow 解决
+
+#### import Image error
+``` bash
+try:
+    import Image
+except Exception, e:
+    from PIL import Image
+```
