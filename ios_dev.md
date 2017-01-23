@@ -23,3 +23,15 @@ if ([[UIApplication sharedApplication] canOpenURL:url]) {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
 }
 ```
+
+#### [自定义cocoasPod 安装](https://github.com/CocoaPods/CocoaPods/issues/3692) Operation not permitted - /usr/bin/xcodeproj 解决办法
+``` bash
+$ mkdir -p $HOME/Software/ruby
+$ export GEM_HOME=$HOME/Software/ruby
+$ gem install cocoapods
+[...]
+1 gem installed
+$ export PATH=$PATH:$HOME/Software/ruby/bin
+$ pod --version
+0.37.2
+```
