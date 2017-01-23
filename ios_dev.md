@@ -24,7 +24,7 @@ if ([[UIApplication sharedApplication] canOpenURL:url]) {
 }
 ```
 
-#### [自定义cocoasPod 安装](https://github.com/CocoaPods/CocoaPods/issues/3692) Operation not permitted - /usr/bin/xcodeproj 解决办法
+#### 自定义cocoasPod安装
 ``` bash
 $ mkdir -p $HOME/Software/ruby
 $ export GEM_HOME=$HOME/Software/ruby
@@ -34,4 +34,15 @@ $ gem install cocoapods
 $ export PATH=$PATH:$HOME/Software/ruby/bin
 $ pod --version
 0.37.2
+```
+
+#### [sudo gem install cocoapods Operation not permitted - /usr/bin/xcodeproj](http://stackoverflow.com/a/30851030/1528524)解决办法
+``` bash
+# 错误信息
+xxxx:newlight xxxx$ sudo gem install cocoapods
+ERROR:  While executing gem ... (Errno::EPERM)
+    Operation not permitted - /usr/bin/xcodeproj
+
+# 使用以下命令安装
+sudo gem install -n /usr/local/bin cocoapods  
 ```
