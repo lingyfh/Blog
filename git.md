@@ -17,3 +17,11 @@ git config --global color.diff auto
 git config --global color.branch auto
 git config --global color.interactive auto
 ```
+
+### git 忽略已经提交的文件
+``` bash
+git rm --cached xxxx
+
+update .gitignore
+git commit 
+```
