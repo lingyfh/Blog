@@ -206,3 +206,13 @@ wget --no-check-certificate https:
 # 速度限制为100KB/s
 scp -P prot -l 100 user@host:/home/user/file ./
 ```
+
+#### 修文件文件夹的所有者用户组
+``` bash
+sudo chown xxxx(author):xxxx(group) xxxx(file)
+```
+
+#### lost+found 文件夹创建
+``` bash
+sudo mklost+found
+```
