@@ -34,3 +34,8 @@ r.expire(key, time) 单位秒
 datetime = datetime.datetime(2016, 12, 6, 11, 28, 10)
 r.expireat(key, datetime) key会在2016年12月6日11点28分10秒过期
 ```
+
+* redis 查看key ttl(过期时间)
+``` bash
+TTL xxx(key)
+```
