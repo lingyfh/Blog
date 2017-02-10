@@ -25,3 +25,7 @@ mongod --port 30000 --dbpath /data/arbiter --replSet rs
 
 rs.addArb("host:30000")
 ```
+
+#### mongodb 切换master
+
+修改rs.config()中members中的priority即可
