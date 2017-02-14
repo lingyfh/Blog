@@ -216,3 +216,30 @@ sudo chown xxxx(author):xxxx(group) xxxx(file)
 ``` bash
 sudo mklost+found
 ```
+
+#### iostat [iostat来对linux硬盘IO性能进行了解](http://www.php-oa.com/2009/02/03/iostat.html)
+``` bash
+iostat -x
+Linux 3.2.0-4-amd64 (tinya) 	02/14/2017 	_x86_64_	(2 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           1.88    0.00    1.78    0.16    0.00   96.18
+
+Device:         rrqm/s   wrqm/s     r/s     w/s    rkB/s    wkB/s avgrq-sz avgqu-sz   await r_await w_await  svctm  %util
+vda               0.00    41.51    0.36    3.53     6.57   377.48   197.75     0.17   45.02    1.78   49.40   1.11   0.43
+
+rrqm/s:  	每秒进行 merge 的读操作数目.即 delta(rmerge)/s
+wrqm/s:   每秒进行 merge 的写操作数目.即 delta(wmerge)/s
+r/s:      每秒完成的读 I/O 设备次数.即 delta(rio)/s
+w/s:      每秒完成的写 I/O 设备次数.即 delta(wio)/s
+rsec/s:   每秒读扇区数.即 delta(rsect)/s
+wsec/s: 	 每秒写扇区数.即 delta(wsect)/s
+rkB/s:    每秒读K字节数.是 rsect/s 的一半,因为每扇区大小为512字节.(需要计算)
+wkB/s:    每秒写K字节数.是 wsect/s 的一半.(需要计算)
+avgrq-sz: 平均每次设备I/O操作的数据大小 (扇区).delta(rsect+wsect)/delta(rio+wio)
+avgqu-sz: 平均I/O队列长度.即 delta(aveq)/s/1000 (因为aveq的单位为毫秒).
+await:   	平均每次设备I/O操作的等待时间 (毫秒).即 delta(ruse+wuse)/delta(rio+wio)
+svctm:  	 平均每次设备I/O操作的服务时间 (毫秒).即 delta(use)/delta(rio+wio)
+%util:    一秒中有百分之多少的时间用于 I/O 操作,或者说一秒中有多少时间 I/O 队列是非空的.即 delta(use)/s/1000 (因为use的单位为毫秒)
+
+```
