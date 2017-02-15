@@ -243,3 +243,8 @@ svctm:  	 平均每次设备I/O操作的服务时间 (毫秒).即 delta(use)/del
 %util:    一秒中有百分之多少的时间用于 I/O 操作,或者说一秒中有多少时间 I/O 队列是非空的.即 delta(use)/s/1000 (因为use的单位为毫秒)
 
 ```
+
+#### kill other ssh login user
+``` bash
+pkill -9 -t pts/0 
+```
