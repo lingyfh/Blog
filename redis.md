@@ -39,3 +39,23 @@ r.expireat(key, datetime) key会在2016年12月6日11点28分10秒过期
 ``` bash
 TTL xxx(key)
 ```
+
+* redis slowlog [redis 性能分析](http://www.zmonster.me/2015/12/16/redis-performance-analysis.html)
+``` bash
+# 按时间排序，最新在最前面
+127.0.0.1:6379> slowlog get 2 （默认10）
+ 1) 1) (integer) 194158 (日志序号)
+    2) (integer) 1487304004 （时间 date -d @1487304004 转换为年月日）
+    3) (integer) 15934 （消耗时间us）
+    4) 1) "ZREMRANGEBYRANK" (redis操作)
+       2) "flow_homeimage"
+       3) "20000"
+       4) "30000"
+ 2) 1) (integer) 194157
+    2) (integer) 1487303764
+    3) (integer) 13251
+    4) 1) "ZREMRANGEBYRANK"
+       2) "flow_homeimage"
+       3) "20000"
+       4) "30000"
+```
