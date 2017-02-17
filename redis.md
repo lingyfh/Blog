@@ -61,3 +61,9 @@ TTL xxx(key)
 ```
 
 * redis-cli --latency 查看redis 操作延迟
+
+* [redis runtime 修改配置](https://redis.io/commands/config-set)
+``` hash 
+127.0.0.1:6379>CONFIG SET SAVE "900 1 300 10"
+OK
+```
