@@ -59,3 +59,5 @@ TTL xxx(key)
        3) "20000"
        4) "30000"
 ```
+
+* redis-cli --latency 查看redis 操作延迟
