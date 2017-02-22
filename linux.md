@@ -248,3 +248,19 @@ svctm:  	 平均每次设备I/O操作的服务时间 (毫秒).即 delta(use)/del
 ``` bash
 pkill -9 -t pts/0 
 ```
+
+#### top 查看进程占用CPU超过100%(这里显示的是总和)
+``` bash
+在top情况下，按1，能显显每一个cpu的占用情况 
+Tasks: 347 total,   2 running, 345 sleeping,   0 stopped,   0 zombie
+%Cpu0  : 27.9 us,  6.0 sy,  0.0 ni, 60.1 id,  0.0 wa,  0.0 hi,  6.0 si,  0.0 st
+%Cpu1  : 25.2 us,  6.4 sy,  0.0 ni, 68.1 id,  0.0 wa,  0.0 hi,  0.3 si,  0.0 st
+%Cpu2  : 18.1 us,  5.0 sy,  0.0 ni, 76.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu3  : 22.3 us,  2.4 sy,  0.0 ni, 75.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu4  : 21.1 us,  3.7 sy,  0.0 ni, 74.6 id,  0.3 wa,  0.0 hi,  0.3 si,  0.0 st
+%Cpu5  : 15.1 us,  4.4 sy,  0.0 ni, 80.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu6  :  9.9 us,  4.8 sy,  0.0 ni, 84.6 id,  0.0 wa,  0.0 hi,  0.7 si,  0.0 st
+%Cpu7  : 16.3 us,  3.7 sy,  0.0 ni, 79.7 id,  0.0 wa,  0.0 hi,  0.3 si,  0.0 st
+KiB Mem:  33021532 total, 32550000 used,   471532 free,    75840 buffers
+KiB Swap: 33554428 total,  1985672 used, 31568756 free,  3327992 cached
+```
