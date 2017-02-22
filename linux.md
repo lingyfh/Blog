@@ -264,3 +264,10 @@ Tasks: 347 total,   2 running, 345 sleeping,   0 stopped,   0 zombie
 KiB Mem:  33021532 total, 32550000 used,   471532 free,    75840 buffers
 KiB Swap: 33554428 total,  1985672 used, 31568756 free,  3327992 cached
 ```
+
+#### nohup 自定义日志输出
+``` bash
+nohup xxxxx(your command) > xxxx.log(your log file) 2>&1 &
+ex:
+nohup python test.py > python_test.log 2>&1 &
+```
