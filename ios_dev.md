@@ -46,3 +46,6 @@ ERROR:  While executing gem ... (Errno::EPERM)
 # 使用以下命令安装
 sudo gem install -n /usr/local/bin cocoapods  
 ```
+
+#### 关闭
+OS_ACTIVITY_MODE disable
