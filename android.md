@@ -44,3 +44,8 @@
     keytool -list -v -keystore xxx.keystore 
 
   
+#### ClassyShark打开apk  
+``` bash
+java -jar ClassyShark.jar -open xxxx.apk
+```
+  
