@@ -36,6 +36,10 @@ $ pod --version
 0.37.2
 ```
 
+#### cocoasPod 默认source
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/Artsy/Specs.git'
+
 #### [sudo gem install cocoapods Operation not permitted - /usr/bin/xcodeproj](http://stackoverflow.com/a/30851030/1528524)解决办法
 ``` bash
 # 错误信息
