@@ -29,3 +29,6 @@ rs.addArb("host:30000")
 #### mongodb 切换master
 
 修改rs.config()中members中的priority即可
+
+#### group
+db.xxxx.aggregate([{$group: {_id: "$uid", count:{$sum:1}}}, {$sort:{count: -1}}]).pretty()
