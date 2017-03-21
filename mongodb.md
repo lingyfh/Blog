@@ -2,6 +2,7 @@
 * 进入mongo 
 * use admin (or mongo admin)
 * db.shutdownServer()
+* db.shutdownServer({timeoutSecs: 60})
 
 #### 强制修改mongodb配置
 ``` bash
