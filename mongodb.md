@@ -38,3 +38,8 @@ App适配情况
 
 #### group
 db.xxxx.aggregate([{$group: {_id: "$uid", count:{$sum:1}}}, {$sort:{count: -1}}]).pretty()
+
+#### pymongo
+``` bash
+pymongo 2.5 与 2.7.1 兼容
+```
