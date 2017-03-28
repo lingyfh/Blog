@@ -30,6 +30,8 @@ rs.addArb("host:30000")
 #### mongodb 切换master
 
 修改rs.config()中members中的priority即可
+rs.stepDown() 方法将当前master，下线，并且在一定时间不当选为master
+注意集群中的votes
 
 #### group
 db.xxxx.aggregate([{$group: {_id: "$uid", count:{$sum:1}}}, {$sort:{count: -1}}]).pretty()
