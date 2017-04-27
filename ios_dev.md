@@ -59,6 +59,7 @@ Realm object has been deleted or invalidated
 realm 对象delete之后不能再继续使用
 
 #### isKindOf 使用
+``` bash
 [value isKindOfClass:[def classForCoder]]
 此处classForCoder优于class
 例：
@@ -66,4 +67,6 @@ NSArray *array_empty = @[] // [array_empty class] is __NSArray0
 NSArray *array = @[@"123", @"123"] // [array class] is __NSArrayI
 [array_empty classForCoder] is NSArray
 [array classForCoder] is NSArray
+```
+
 
