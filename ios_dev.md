@@ -69,4 +69,11 @@ NSArray *array = @[@"123", @"123"] // [array class] is __NSArrayI
 [array classForCoder] is NSArray
 ```
 
-
+#### 编码字符转换
+``` bash
+# gbk转utf-8
+NSURLResponse * _Nullable response
+response.textEncodingName(gbk)
+NSData * _Nullable data
+NSString *string = [[NSString alloc] initWithData:data encoding:CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000)];
+```
