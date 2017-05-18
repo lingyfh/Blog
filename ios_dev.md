@@ -77,3 +77,14 @@ response.textEncodingName(gbk)
 NSData * _Nullable data
 NSString *string = [[NSString alloc] initWithData:data encoding:CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000)];
 ```
+
+#### Could not build module 'xxxx' (xxxx is name of framework)
+you should delete DerivedData dir.
+1. where?
+``` bash
+you can go to File > Workspace Settings.
+you can see a dialog. click 'ringht arrow'. you'ill go into a dir.
+```
+
+2. delete all files in DerivedData.
+
