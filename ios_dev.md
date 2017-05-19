@@ -88,3 +88,7 @@ you can see a dialog. click 'ringht arrow'. you'ill go into a dir.
 
 2. delete all files in DerivedData.
 
+#### 下载图片保存到相册，无日志crash
+在info.plist中，增加权限说明
+Privacy - Photo Library Usage Description
+
