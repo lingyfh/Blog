@@ -48,4 +48,23 @@
 ``` bash
 java -jar ClassyShark.jar -open xxxx.apk
 ```
-  
+
+#### 判断一个服务是否在运行[stackoverflow](https://stackoverflow.com/a/5921190/1528524)
+``` bash
+Ex: isMyServiceRunning(MyService.class)
+private boolean isMyServiceRunning(Class<?> serviceClass) {
+    ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+    for (RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+        if (serviceClass.getName().equals(service.service.getClassName())) {
+            return true;
+        }
+    }
+    return false;
+}
+```
+
+#### MediaPlayer
+``` bash
+mediaplay.setDataSource
+call mediaplay.reset()
+```
