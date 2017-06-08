@@ -68,3 +68,8 @@ private boolean isMyServiceRunning(Class<?> serviceClass) {
 mediaplay.setDataSource
 call mediaplay.reset()
 ```
+
+#### fragment中使用FragmentPagerAdapter，并存在多个viewpager时，注意FragmentManager的使用
+``` bash
+getChildFragmentManager()
+```
