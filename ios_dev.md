@@ -92,3 +92,12 @@ you can see a dialog. click 'ringht arrow'. you'ill go into a dir.
 在info.plist中，增加权限说明
 Privacy - Photo Library Usage Description
 
+#### OC项目中使用swift
+``` bash
+1. 在OC项目是新建swift文件，会提示自动生成bridging头文件（projectname-Bridging-Header.h）
+2. 在Targets Build Settings中，会生成Swift Compiler-General下， Objective-C Bridging Header配置
+projectname/xxxxx/projectname-Bridging-Header.h
+3. 在使用时，引入头文件。projectname-Swift.h
+#import "xxxx-Swift.h"
+编译成功即可正常使用
+```
