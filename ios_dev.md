@@ -101,3 +101,19 @@ projectname/xxxxx/projectname-Bridging-Header.h
 #import "xxxx-Swift.h"
 编译成功即可正常使用
 ```
+
+#### valueForKeyPath
+``` bash
+# 数组快速计算数组求和、平均数、最大值、最小值
+NSArray *array = @[@1, @2, @3, @4, @10];
+NSNumber *sum = [array valueForKeyPath:@"@sum.self"];
+NSNumber *avg = [array valueForKeyPath:@"@avg.self"];
+NSNumber *max = [array valueForKeyPath:@"@max.self"];
+NSNumber *min = [array valueForKeyPath:@"@min.self"];
+
+# 或者指定输出类型
+NSNumber *sum = [array valueForKeyPath:@"@sum.floatValue"];
+NSNumber *avg = [array valueForKeyPath:@"@avg.floatValue"];
+NSNumber *max = [array valueForKeyPath:@"@max.floatValue"];
+NSNumber *min = [array valueForKeyPath:@"@min.floatValue"];
+```
