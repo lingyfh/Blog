@@ -67,3 +67,10 @@ TTL xxx(key)
 127.0.0.1:6379>CONFIG SET SAVE "900 1 300 10"
 OK
 ```
+
+* redis 统计
+``` bash
+# 查看内存占用大的key
+redis-cli --bigkeys
+```
+
