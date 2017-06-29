@@ -117,3 +117,8 @@ NSNumber *avg = [array valueForKeyPath:@"@avg.floatValue"];
 NSNumber *max = [array valueForKeyPath:@"@max.floatValue"];
 NSNumber *min = [array valueForKeyPath:@"@min.floatValue"];
 ```
+
+#### iOS ping simple 
+``` bash
+https://developer.apple.com/library/content/samplecode/SimplePing/Introduction/Intro.html#//apple_ref/doc/uid/DTS10000716-Intro-DontLinkElementID_2
+```
