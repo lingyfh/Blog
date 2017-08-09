@@ -122,3 +122,5 @@ NSNumber *min = [array valueForKeyPath:@"@min.floatValue"];
 ``` bash
 https://developer.apple.com/library/content/samplecode/SimplePing/Introduction/Intro.html#//apple_ref/doc/uid/DTS10000716-Intro-DontLinkElementID_2
 ```
+
+#### CollectionView reloadData调用过多会导致空白
