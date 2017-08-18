@@ -271,3 +271,8 @@ nohup xxxxx(your command) > xxxx.log(your log file) 2>&1 &
 ex:
 nohup python test.py > python_test.log 2>&1 &
 ```
+
+#### 修改root密码
+``` bash
+sudo passwd root
+```
