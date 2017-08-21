@@ -73,3 +73,8 @@ call mediaplay.reset()
 ``` bash
 getChildFragmentManager()
 ```
+
+#### android tools name space
+``` bash
+xmlns:tools="http://schemas.android.com/tools"
+```
