@@ -73,4 +73,12 @@ OK
 # 查看内存占用大的key
 redis-cli --bigkeys
 ```
+* 移除zet中的数据
+``` bash
+ZREMRANGEBYRANK your_zet_key start_index  end_index
+Ex:
+ZREMRANGEBYRANK test_key 100  200
+```
+
+
 
