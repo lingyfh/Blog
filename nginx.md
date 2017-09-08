@@ -32,3 +32,23 @@ server {
   }
 }
 ```
+
+#### proxy_cache_bypass
+``` bash
+         #set $no_cache false;
+         if ($http_session_id != "") {set $no_cache true;}
+
+         proxy_cache_bypass $no_cache;
+```
+
+#### cache
+``` bash
+proxy_cache_path /dev/shm/video_wallpaper/cache levels=1:2 keys_zone=cache_key_xxx:50m inactive=60m max_size=128m;
+
+         proxy_cache cache_key_xxxx;
+         proxy_cache_methods GET;
+         proxy_cache_key "$scheme$proxy_host$request_uri";
+         proxy_cache_valid 10m;
+         add_header X-Cached $upstream_cache_status;
+         
+```
