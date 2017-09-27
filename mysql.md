@@ -16,3 +16,15 @@
 ``` bash
 conn = MySQLdb.connect(db='mysql', host='localhost', user='root', passwd='', port=3306, charset='utf8')
 ```
+
+#### python 操作mysql 
+``` bash
+import MySQLdb
+
+if __name__ == '__main__':
+    conn = MySQLdb.connect(db='mysql', host='localhost', user='root', passwd='', port=3306, charset='utf8')
+    cursor = conn.cursor()
+    cursor.execute("SELECT id, user_id FROM tencent WHERE user_id = " + 'xxxxx')
+    user_info = cursor.fetchone()
+    print user_info
+```
