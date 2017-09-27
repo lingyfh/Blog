@@ -43,3 +43,12 @@ db.xxxx.aggregate([{$group: {_id: "$uid", count:{$sum:1}}}, {$sort:{count: -1}}]
 ``` bash
 pymongo 2.5 与 2.7.1 兼容
 ```
+
+#### mongodump & mongorestore
+[mongorestore](https://docs.mongodb.com/v3.0/reference/program/mongorestore/)
+
+[mongodump](https://docs.mongodb.com/v3.0/reference/program/mongodump/)
+``` bash
+mongodump  --db test --collection collection
+mongorestore --collection people --db accounts dump/accounts/people.bson
+```
