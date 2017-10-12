@@ -124,3 +124,12 @@ https://developer.apple.com/library/content/samplecode/SimplePing/Introduction/I
 ```
 
 #### CollectionView reloadData调用过多会导致空白
+
+#### 右滑返回
+
+``` bash
+self.navigationController.interactivePopGestureRecognizer.delegate = self;
+<UIGestureRecognizerDelegate>
+```
+
+   
