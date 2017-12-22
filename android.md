@@ -78,3 +78,11 @@ getChildFragmentManager()
 ``` bash
 xmlns:tools="http://schemas.android.com/tools"
 ```
+
+#### litepal 
+修改DB文件到sdcard
+``` bash
+修改litepal.xml
+<storage value="external" />
+存储路径，/sdcard/Android/data/package_name/files/databases
+```
