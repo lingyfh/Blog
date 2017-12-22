@@ -65,3 +65,8 @@ If you install gems on /usr/local/bin there will be no problem because rootless 
 brew install openssl 
 brew link openssl --force
 ```
+
+#### go 环境变
+``` bash
+export PATH=$PATH:/usr/local/go/bin
+```
