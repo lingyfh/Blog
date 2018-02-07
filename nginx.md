@@ -84,6 +84,11 @@ proxy_cache_path /dev/shm/video_wallpaper/cache levels=1:2 keys_zone=cache_key_x
     }
 ```
 
+#### nginx ssl
+``` bash
+certbot
+```
+
 
 
 
