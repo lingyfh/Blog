@@ -89,7 +89,20 @@ proxy_cache_path /dev/shm/video_wallpaper/cache levels=1:2 keys_zone=cache_key_x
 certbot
 ```
 
+#### 统计文件行数
+``` bash
+wc -l xxxx.log
+-c 字节数
+-w 字数
+-l 行数
+```
 
+#### 按行分割文件
+``` bash
+sed -n '1000, 2000p' xxxxx.log > xxxx.temp.log
+start 1000
+end   2000
+```
 
 
 
