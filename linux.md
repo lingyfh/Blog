@@ -276,3 +276,8 @@ nohup python test.py > python_test.log 2>&1 &
 ``` bash
 sudo passwd root
 ```
+
+#### awk分割字符串，查看指定参数
+``` bash
+tail -f /var/log/nginx/xxxx.log | awk '{split($9, a, "skip"); split(a[2], b, "&");print b[1]}'
+```
