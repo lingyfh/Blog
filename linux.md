@@ -281,3 +281,10 @@ sudo passwd root
 ``` bash
 tail -f /var/log/nginx/xxxx.log | awk '{split($9, a, "skip"); split(a[2], b, "&");print b[1]}'
 ```
+
+#### awk打印nginx skip超过指定数字的请求
+``` bash
+sudo tail -f /var/log/nginx/*.log | grep skip | awk '{split($9, a, "skip=");split(a[2], b, "&"); if(b[1]>2000){print b[1], $7, $8, $9}}'
+```
+
+
