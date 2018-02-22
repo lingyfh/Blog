@@ -86,3 +86,27 @@ xmlns:tools="http://schemas.android.com/tools"
 <storage value="external" />
 存储路径，/sdcard/Android/data/package_name/files/databases
 ```
+
+#### 精确alarm manager
+``` bash
+int repeatTime = 60 * 1000;
+AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+am.setExact(AlarmManager.RTC, System.currentTimeMillis() + repeatTime, pi);
+```
+
+#### 更新widget
+``` bash
+RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.layout_id_xxxx);
+views.setTextViewText(R.id.view_id_xxxxx, "" + System.currentTimeMillis());
+
+AppWidgetManager manager = AppWidgetManager.getInstance(context.getApplicationContext());
+ComponentName componentName = new ComponentName(context.getApplicationContext(), MarketAppWidget.class);
+manager.updateAppWidget(componentName, views);
+```
+
+
+
+
+
+
+
