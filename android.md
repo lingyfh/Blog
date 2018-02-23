@@ -104,6 +104,12 @@ ComponentName componentName = new ComponentName(context.getApplicationContext(),
 manager.updateAppWidget(componentName, views);
 ```
 
+#### 查看app布局情况
+``` bash
+Android Device Monitor
+```
+
+
 
 
 
