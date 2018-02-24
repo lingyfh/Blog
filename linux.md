@@ -290,11 +290,11 @@ sudo tail -f /var/log/nginx/*.log | grep skip | awk '{split($9, a, "skip=");spli
 #### /etc/cron.d/ crontab 按秒执行脚本(每十秒执行一次)
 ``` bash
 * * * * * yourusername  /bin/date >>/home/yada/temp/date.txt
-* * * * * yourusername sleep 10; /bin/date >>/home/yada/temp/date.txt
-* * * * * yourusername sleep 20; /bin/date >>/home/yada/temp/date.txt
-* * * * * yourusername sleep 30; /bin/date >>/home/yada/temp/date.txt
-* * * * * yourusername sleep 40; /bin/date >>/home/yada/temp/date.txt
-* * * * * yourusername sleep 50; /bin/date >>/home/yada/temp/date.txt
+* * * * * yourusername sleep 10; /bin/date >>/home/yourusername/temp/date.txt
+* * * * * yourusername sleep 20; /bin/date >>/home/yourusername/temp/date.txt
+* * * * * yourusername sleep 30; /bin/date >>/home/yourusername/temp/date.txt
+* * * * * yourusername sleep 40; /bin/date >>/home/yourusername/temp/date.txt
+* * * * * yourusername sleep 50; /bin/date >>/home/yourusername/temp/date.txt
 ```
 
 
