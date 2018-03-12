@@ -104,7 +104,24 @@ start 1000
 end   2000
 ```
 
+#### nginx调优
+``` bash
+sudo vi /etc/sysctl.conf
+sudo sysctl -p
 
+#optimize
+net.ipv4.netfilter.ip_conntrack_max = 393216
+net.ipv4.netfilter.ip_conntrack_tcp_timeout_established = 30
+net.ipv4.netfilter.ip_conntrack_tcp_timeout_time_wait = 120
+net.ipv4.netfilter.ip_conntrack_tcp_timeout_close_wait = 60
+net.ipv4.netfilter.ip_conntrack_tcp_timeout_fin_wait = 120
+
+```
+
+#### nginx单位时间内流量
+``` bash
+grep 12/Mar/2018:19:53 xxxx.log | awk '{SUM +=$16} END {print SUM}'
+```
 
 
 
