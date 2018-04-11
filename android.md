@@ -109,6 +109,16 @@ manager.updateAppWidget(componentName, views);
 Android Device Monitor
 ```
 
+#### gradle 插件版本
+``` bash
+classpath 'com.android.tools.build:gradle:2.2.2'
+```
+gradle 4.6版与插件版本2.2.2不兼容。升级插件版本到2.3.3兼容
+``` bash
+classpath 'com.android.tools.build:gradle:2.3.3'
+```
+
+
 
 
 
