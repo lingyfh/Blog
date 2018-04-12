@@ -297,4 +297,9 @@ sudo tail -f /var/log/nginx/*.log | grep skip | awk '{split($9, a, "skip=");spli
 * * * * * yourusername sleep 50; /bin/date >>/home/yourusername/temp/date.txt
 ```
 
+#### 查看最近关机信息
+``` bash
+last reboot | less
+last -x | less
+```
 
