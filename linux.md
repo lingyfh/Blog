@@ -303,3 +303,8 @@ last reboot | less
 last -x | less
 ```
 
+#### 查看系统版本
+``` bash
+lsb_release -a
+```
+
