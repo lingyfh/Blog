@@ -1,5 +1,6 @@
 #### 查看进程自执行路径
 * sudo ls -l /proc/PID
+* cat /proc/PID/cmdline
 
 #### 命令行安装android sdk [参考 打造一个全命令行的Android构建系统](http://www.jianshu.com/p/1694ea9a3f90)
 * wget https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
