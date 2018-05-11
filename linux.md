@@ -314,3 +314,9 @@ mkfs.ext4 /dev/xxxxx（将xxx分区格式化为ext4）
 sudo fdisk /dev/sdb 分区
 sudo mount /dev/sdb1 /data/xxxxx 挂载
 ```
+
+#### 修改文件夹用户组
+``` bash
+chrown -R yada /xxx/xxx
+```
+
