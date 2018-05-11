@@ -317,6 +317,6 @@ sudo mount /dev/sdb1 /data/xxxxx 挂载
 
 #### 修改文件夹用户组
 ``` bash
-chrown -R yada /xxx/xxx
+chrown -R username /xxx/xxx
 ```
 
