@@ -308,4 +308,9 @@ last -x | less
 ``` bash
 lsb_release -a
 ```
-
+#### 分区挂载磁盘
+``` bash
+mkfs.ext4 /dev/xxxxx（将xxx分区格式化为ext4）
+sudo fdisk /dev/sdb 分区
+sudo mount /dev/sdb1 /data/xxxxx 挂载
+```
