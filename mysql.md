@@ -28,3 +28,9 @@ if __name__ == '__main__':
     user_info = cursor.fetchone()
     print user_info
 ```
+
+#### brew install mysql  配置密码
+``` bash
+mysql.server start 启动
+mysql_secure_installation 配置
+```
