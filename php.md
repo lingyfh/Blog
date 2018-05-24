@@ -34,3 +34,16 @@ hello.php
 ```
 
 10. 打开浏览器，输入localhost/hello，能看到相应的php信息则表明正确
+
+11. Mac apache配置文件路径
+``` bash
+/etc/apache2/httpd.conf
+```
+
+12. 配置apache文件夹路径
+``` bash
+# DocumentRoot "/Library/WebServer/Documents"
+# <Directory "/Library/WebServer/Documents">
+DocumentRoot "/Users/yourusername/webserver"
+<Directory "/Users/yourusername/webserver">
+```
