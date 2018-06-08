@@ -123,6 +123,18 @@ net.ipv4.netfilter.ip_conntrack_tcp_timeout_fin_wait = 120
 grep 12/Mar/2018:19:53 xxxx.log | awk '{SUM +=$16} END {print SUM}'
 ```
 
+#### nginx default_server
+``` bash
+server {
 
+  listen 80 default_server;
 
+  access_log /var/log/nginx/default_server.log main;
+  error_log /var/log/nginx/default_server.err;
+
+  location / {
+    return 403;
+  }
+}
+```
 
