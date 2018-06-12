@@ -25,3 +25,8 @@ git rm --cached xxxx
 update .gitignore
 git commit 
 ```
+
+### git 撤销mergeing
+``` bash
+git reset --hard HEAD
+```
