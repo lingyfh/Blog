@@ -320,3 +320,8 @@ sudo mount /dev/sdb1 /data/xxxxx 挂载
 chrown -R username /xxx/xxx
 ```
 
+#### 查看文件类型信息
+``` bash
+file xxxx(filepath)
+stat xxxx(filepath)
+```
