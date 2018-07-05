@@ -129,7 +129,10 @@ Plugin version | Required Gradle version
 3.0.0+	        |4.1+
 3.1.0+	        |4.4+
 
-
+#### 获取anr日志
+``` bash
+adb pull /data/anr/traces.txt ~/Desktop/
+```
 
 
 
