@@ -30,3 +30,8 @@ git commit
 ``` bash
 git reset --hard HEAD
 ```
+
+### git 撤销commit 保留更改
+``` bash
+git reset --soft commit_version
+```
