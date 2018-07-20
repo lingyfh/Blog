@@ -134,6 +134,15 @@ Plugin version | Required Gradle version
 adb pull /data/anr/traces.txt ~/Desktop/
 ```
 
+#### adb wifi debug
+1. 通过数据线连接电脑
+``` bash
+adb tcpip 5555
+```
+2. 连接手机
+``` bash 
+adb connect your_phone_ip
+```
 
 
 
