@@ -144,7 +144,10 @@ adb tcpip 5555
 adb connect your_phone_ip
 ```
 
-
+#### adb 多个设备操作
+``` bash
+adb -s deviceid adb_cmd
+```
 
 
 
