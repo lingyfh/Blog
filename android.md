@@ -149,6 +149,20 @@ adb connect your_phone_ip
 adb -s deviceid adb_cmd
 ```
 
+#### gradle 自定义 BuildConfig
+``` bash
+android {
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "yourconfig", "true"
+        }
+    }
+}
+
+// BuildConfig
+BuildConfig.yourconfig will true
+```
+
 
 
 
