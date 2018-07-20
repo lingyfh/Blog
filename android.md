@@ -163,6 +163,13 @@ android {
 BuildConfig.yourconfig will true
 ```
 
+#### google play下架app
+定价和分发范围 -> 取消发布 -> 保存更新
+
+
+ 
+
+
 
 
 
