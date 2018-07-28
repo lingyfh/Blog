@@ -325,3 +325,10 @@ chrown -R username /xxx/xxx
 file xxxx(filepath)
 stat xxxx(filepath)
 ```
+
+#### 查看系统启时间
+``` bash
+last reboot
+who -b
+uptime
+```
