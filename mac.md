@@ -70,3 +70,8 @@ brew link openssl --force
 ``` bash
 export PATH=$PATH:/usr/local/go/bin
 ```
+
+#### install xcode-select
+``` bash
+xcode-select --install
+```
