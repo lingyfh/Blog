@@ -332,3 +332,8 @@ last reboot
 who -b
 uptime
 ```
+
+#### crontab 完整日志输出
+``` bash
+* * * * * python /Users/xxxxx/xxxx.py >> /Users/xxxx_.log 2>&1 &
+```
