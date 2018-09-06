@@ -167,6 +167,10 @@ BuildConfig.yourconfig will true
 定价和分发范围 -> 取消发布 -> 保存更新
 
 
+#### gradle 查看库相关依赖
+``` bash
+gradle project_name:dependencies
+```
  
 
 
