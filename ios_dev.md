@@ -132,4 +132,8 @@ self.navigationController.interactivePopGestureRecognizer.delegate = self;
 <UIGestureRecognizerDelegate>
 ```
 
+#### 升级cocoapods
+``` bash
+sudo gem install cocoapods
+```
    
