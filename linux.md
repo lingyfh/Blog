@@ -337,3 +337,12 @@ uptime
 ``` bash
 * * * * * python /Users/xxxxx/xxxx.py >> /Users/xxxx_.log 2>&1 &
 ```
+
+#### crontab 时间取值范围
+``` bash
+分钟: 0-59
+小时: 0-23
+日期: 1-31 
+月份: 1-12
+星期: 0-7 (0和7都是周日)
+```
