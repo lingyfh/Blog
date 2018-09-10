@@ -35,3 +35,8 @@ git reset --hard HEAD
 ``` bash
 git reset --soft commit_version
 ```
+
+### 将某两个分支修改过的代码提取出来
+``` bash
+git diff xxxx_branch | grep 'diff --git' | awk '{print $3}' | awk '{sub("a/", ""); print $0}' | xargs git reset feature/4.6.2
+```
