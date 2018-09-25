@@ -173,7 +173,11 @@ gradle project_name:dependencies
 ```
  
 
-
+#### apk signer [签署您的应用](https://developer.android.com/studio/publish/app-signing)
+``` bash
+keytool -genkey -v -keystore my-release-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias my-alias
+apksigner sign --ks my-release-key.jks --out my-app-release.apk my-app-unsigned-aligned.apk
+```
 
 
 
