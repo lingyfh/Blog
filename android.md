@@ -179,6 +179,13 @@ keytool -genkey -v -keystore my-release-key.jks -keyalg RSA -keysize 2048 -valid
 apksigner sign --ks my-release-key.jks --out my-app-release.apk my-app-unsigned-aligned.apk
 ```
 
+#### adb push file to Read-only file system
+``` bash
+adb root
 
+adb remount
+```
+
+adb push xxx system/bin
 
 
