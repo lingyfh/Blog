@@ -188,4 +188,7 @@ adb remount
 
 adb push xxx system/bin
 
-
+#### mac install adb
+``` bash
+brew cask install android-platform-tools
+```
