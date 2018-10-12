@@ -141,4 +141,8 @@ sudo gem install cocoapods
 ``` bash
 https://developer.apple.com/download/more/
 ```
+在下载相应的文件时，不能通过点击下载，然后copy下载地址放到迅雷中
+在这样的情况下，会导致无法下载(可能是apple做了安全处理)
+
+使用迅雷下载，需要直接copy下载地址，放到迅雷中下载
 
