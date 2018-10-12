@@ -346,3 +346,20 @@ uptime
 月份: 1-12
 星期: 0-7 (0和7都是周日)
 ```
+
+
+#### commend line 配置代理
+在.bash_profile中配置
+科学上网的端口
+``` bash
+# 开启
+function freedom() {
+        export http_proxy='http://127.0.0.1:1087'
+        export https_proxy='https://127.0.0.1:1087'
+}
+# 关闭
+function unfreedom() {
+	unset http_proxy
+	unset https_proxy
+}
+```
