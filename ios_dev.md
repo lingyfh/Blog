@@ -136,4 +136,9 @@ self.navigationController.interactivePopGestureRecognizer.delegate = self;
 ``` bash
 sudo gem install cocoapods
 ```
-   
+
+#### Xcode历史版本下载
+``` bash
+https://developer.apple.com/download/more/
+```
+
