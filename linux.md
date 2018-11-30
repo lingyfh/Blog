@@ -363,3 +363,8 @@ function unfreedom() {
 	unset https_proxy
 }
 ```
+
+#### 多个文件合成一个文件
+``` bash
+find . -name "*.h" -o -name "*.m" | xargs -n 1 cat > test.log
+```
