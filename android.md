@@ -192,3 +192,8 @@ adb push xxx system/bin
 ``` bash
 brew cask install android-platform-tools
 ```
+
+#### Memory to File
+``` bash
+memory read --outfile /tmp/mem.txt --count 512 0xbffff3c0
+```
