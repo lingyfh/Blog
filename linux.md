@@ -368,3 +368,10 @@ function unfreedom() {
 ``` bash
 find . -name "*.h" -o -name "*.m" | xargs -n 1 cat > test.log
 ```
+#### ffmpeg 采集RTMP推流
+```
+ffmpeg -r 30 -f avfoundation -s 640x480  -i "0:0" -vcodec h264 -allow_sw 1 -pixel_format uyvy422 -b 600k -f flv your_publish_rtmp_url
+
+ffmpeg -r 30 -f avfoundation -s 640x480  -i "0:0" -vcodec h264 -allow_sw 1 -pixel_format uyvy422 -b 600k -acodec aac -ab 128k -f flv your_publish_rtmp_url
+```
+
