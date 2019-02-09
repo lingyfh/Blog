@@ -197,3 +197,8 @@ brew cask install android-platform-tools
 ``` bash
 memory read --outfile /tmp/mem.txt --count 512 0xbffff3c0
 ```
+
+#### download android source
+``` bash
+git clone --branch android-cts-7.1_r24 git@github.com:aosp-mirror/platform_frameworks_base.git --depth 1
+```
