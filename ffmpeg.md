@@ -9,3 +9,6 @@
  
  #### FFmpeg mp3 to mkv 
  ffmpeg -loop 1 -i xxx.jpg -i xxxx.mp3 -c:a copy -c:v libx264 -shortest xxxx.mkv
+
+ #### FFmpeg show devices
+ ffmpeg -f avfoundation -list_devices true -i ""
