@@ -202,3 +202,9 @@ memory read --outfile /tmp/mem.txt --count 512 0xbffff3c0
 ``` bash
 git clone --branch android-cts-7.1_r24 git@github.com:aosp-mirror/platform_frameworks_base.git --depth 1
 ```
+
+#### javah 
+``` bash
+javah -classpath app/build/intermediates/classes/debug/ com.xxx.YourClassName 
+```
+
