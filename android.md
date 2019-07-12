@@ -207,4 +207,8 @@ git clone --branch android-cts-7.1_r24 git@github.com:aosp-mirror/platform_frame
 ``` bash
 javah -classpath app/build/intermediates/classes/debug/ com.xxx.YourClassName 
 ```
-
+#### android source code
+``` bash
+https://android.googlesource.com/platform/libcore/
+http://androidxref.com
+```
