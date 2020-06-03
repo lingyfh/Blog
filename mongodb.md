@@ -2,8 +2,13 @@
 * use your_db
 * db.runCommand({compact: 'your_collection_name'})
 * 注意数据库备份
-[MongoDB如何释放空闲空间](https://zhuanlan.zhihu.com/p/38979077)
+* [MongoDB如何释放空闲空间](https://zhuanlan.zhihu.com/p/38979077)
+> How do I reclaim disk space in WiredTiger?
+The WiredTiger storage engine maintains lists of empty records in data files as it deletes documents. This space can be reused by WiredTiger, but will not be returned to the operating system unless under very specific circumstances.
+> The amount of empty space available for reuse by WiredTiger is reflected in the output of db.collection.stats() under the heading wiredTiger.block-manager.file bytes available for reuse.
+> To allow the WiredTiger storage engine to release this empty space to the operating system, you can de-fragment your data file. This can be achieved using the compact command. For more information on its behavior and other considerations, see compact.
 
+* [compact](https://docs.mongodb.com/manual/reference/command/compact/#dbcmd.compact)
 
 
 #### 停止mongodb服务
