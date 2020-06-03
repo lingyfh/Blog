@@ -1,3 +1,11 @@
+#### 整理mongodb磁盘空间
+* use your_db
+* db.runCommand({compact: 'your_collection_name'})
+* 注意数据库备份
+[MongoDB如何释放空闲空间](https://zhuanlan.zhihu.com/p/38979077)
+
+
+
 #### 停止mongodb服务
 * 进入mongo 
 * use admin (or mongo admin)
