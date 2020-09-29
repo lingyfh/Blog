@@ -1,3 +1,7 @@
+#### 从文件中取前N个字节
+* head -c 4096 xxx.file > out.file (取前4096字节内容)
+
+
 #### 查看进程自执行路径
 * sudo ls -l /proc/PID
 * cat /proc/PID/cmdline
