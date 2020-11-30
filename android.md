@@ -212,3 +212,8 @@ javah -classpath app/build/intermediates/classes/debug/ com.xxx.YourClassName
 https://android.googlesource.com/platform/libcore/
 http://androidxref.com
 ```
+
+#### 显示进程所有线程
+```
+adb shell ps -p your_pid -T
+```
