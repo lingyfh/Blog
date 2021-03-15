@@ -65,3 +65,8 @@ pymongo 2.5 与 2.7.1 兼容
 mongodump  --db test --collection collection
 mongorestore --collection people --db accounts dump/accounts/people.bson
 ```
+
+#### create index
+```bash
+db.collection_name.createIndex({key: 1}, {background: true})
+```
