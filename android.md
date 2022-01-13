@@ -217,3 +217,17 @@ http://androidxref.com
 ```
 adb shell ps -p your_pid -T
 ```
+
+#### 如何Debug Gradle插件
+1.增加1个Remote的config（默认的就行），
+    attach to remote JVM
+    localhost, prot:5005
+    -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
+    no module
+
+2.启动task跟是-Dorg.gradle.debug=true参数
+```
+./gradlew hotfix_app:assembleRelease -PPatchBuild=true --no-daemon --stacktrace -Dorg.gradle.debug=true
+```
+
+3.在运行第1步的Debug，然后task在打断点的地方会停下来
