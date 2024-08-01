@@ -218,6 +218,12 @@ http://androidxref.com
 adb shell ps -p your_pid -T
 ```
 
+#### Activity 别名
+```
+activity-alias  
+targetActivity
+```
+
 #### 如何Debug Gradle插件
 1.增加1个Remote的config（默认的就行），
     attach to remote JVM
